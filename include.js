@@ -1,18 +1,24 @@
-function header(){
+function header(rootDir){
     $.ajax({
-        url: "/18yohoho.github.io/header.html",
-        cashe: false,
+        url: rootDir + "/css/header.html", // ディレクトリー変更
+        cache: false,
+        async: false,
+        dataType: 'html',
         success: function(html){
+            html = html.replace(/\{\$root\}/g, rootDir); 
             document.write(html);
         }
     });
 }
 
-function footer(){
+function footer(rootDir){
     $.ajax({
-        url: "/18yohoho.github.io/footer.html",
-        cashe: false,
+        url: rootDir + "/css/footer.html", // ディレクトリー変更
+        cache: false,
+        async: false,
+        dataType: 'html',
         success: function(html){
+            html = html.replace(/\{\$root\}/g, rootDir); 
             document.write(html);
         }
     });
