@@ -1,0 +1,13 @@
+.tagBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10%;
+}
+
+.tagIn {
+    border: solid 1px #8455f6;
+    border-radius: 50px;
+    padding: 0 2% 0 2%;
+    margin-left: 27%;
+}

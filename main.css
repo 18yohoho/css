@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+}
+
+a , p {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.titleBox {
+    width: 100%;
+}
+
+.titleImgBox {
+    width: 100%;
+}
+
+.titleImg {
+    pointer-events: none;
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.menuBox {
+    width: 22%;
+    border: solid 2px #8455f6;
+    border-radius: 50px;
+}
+
+.centerMenuBox {
+    margin-left: 4%;
+}
+
+.menuText {
+    color: #8455f6;
+}
+
+.menuBox:hover {
+    background-color: #8455f6;
+    cursor: pointer;
+}
+
+.menuBox:hover .menuText {
+    color: white;
+}
+
+.pickupBox {
+    background-color: #dcdcdc;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.pickupComment {
+    font-size: 16px;
+    color: #8455f6;
+    font-weight: 700;
+}
+
+.topImgBox {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #8455f6;
+    display: flex;
+    background-color: #dcdcdc;
+    flex-wrap: wrap;
+}
+
+.topImg {
+    text-align: left;
+}
+
+.topImgIn {
+    width: 100%;
+}
+
+.topImgTitle {
+    background-color: #dcdcdc;
+}
+
+footer {
+    background-color: #8455f6;
+    margin-top: 2%;
+}
+
+.group {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.infoBox {
+    width: 50%;
+    margin-top: 1%;
+}
+
+.info {
+    color: white;
+    font-weight: 500;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #333333;
+    }
+
+    .pickupBox {
+        background-color: #696969;
+    }
+
+    .pickupComment {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 821px) {
+    .titleBox {
+        border-top: solid 15px #8455f6;
+        border-bottom: solid 15px #8455f6;
+    }
+
+    .titleImg {
+        width: 20%;
+    }
+
+    .menu {
+        width: 60%;
+        margin-bottom: 1%;
+    }
+
+    .menuText {
+        font-size: 17px;
+        font-weight: 900;
+    }
+
+    .pickupBox , .topImgBox {
+        margin-top: 1%;
+    }
+
+    .topImg {
+        width: 12.5%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .titleBox {
+        border-top: solid 15px #8455f6;
+        border-bottom: solid 15px #8455f6;
+    }
+
+    .titleImg {
+        width: 30%;
+    }
+
+    .menu {
+        width: 60%;
+        margin-bottom: 1%;
+    }
+
+    .menuText {
+        font-size: 17px;
+        font-weight: 900;
+    }
+
+    .topImg {
+        width: 25%;
+    }
+
+    .pickupBox , .topImgBox {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .titleBox {
+        border-top: solid 5px #8455f6;
+        border-bottom: solid 5px #8455f6;
+    }
+
+    .titleImg {
+        width: 60%;
+    }
+
+    .menu {
+        width: 70%;
+        margin-bottom: 3%;
+    }
+
+    .menuText {
+        font-size: 10px;
+        font-weight: 900;
+    }
+
+    .topImg {
+        width: 50%;
+    }
+
+    .pickupBox , .topImgBox {
+        margin-top: 3%;
+    }
+}
