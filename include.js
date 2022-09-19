@@ -1,25 +1,12 @@
-function header(rootDir){
+$(function() {
     $.ajax({
-        url: rootDir + "/css/header.html", // ディレクトリー変更
-        cache: false,
-        async: false,
-        dataType: 'html',
-        success: function(html){
-            html = html.replace(/\{\$root\}/g, rootDir); 
-            document.write(html);
-        }
+      url: '/18yohoho.github.io/header.html',
+      dataType: 'html',
+      success: function (data) {
+        $('body').prepend(data);
+      },
+      error: function () {
+        alert('header error!');
+      },
     });
-}
-
-function footer(rootDir){
-    $.ajax({
-        url: rootDir + "/css/footer.html", // ディレクトリー変更
-        cache: false,
-        async: false,
-        dataType: 'html',
-        success: function(html){
-            html = html.replace(/\{\$root\}/g, rootDir); 
-            document.write(html);
-        }
-    });
-}
+  });
