@@ -1,19 +1,12 @@
-function header(){
+$(function() {
   $.ajax({
-      url: "/18yohoho.github.io/header.html",
-      cache: false,
-      success: function(html){
-          document.write(html);
-      }
+    url: '/18yohoho.github.io/header.html', // includeしたいファイルのパスを指定
+    dataType: 'html', // htmlのまま
+    success: function (data) {
+      $('body').prepend(data);
+    },
+    error: function () {
+      alert('header error!');
+    },
   });
-}
-
-function footer(){
-  $.ajax({
-      url: "/18yohoho.github.io/footer.html",
-      cache: false,
-      success: function(html){
-          document.write(html);
-      }
-  });
-}
+});
